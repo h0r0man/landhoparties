@@ -145,7 +145,7 @@ gulp.task('images', ['images-resize', 'images-compress']);
 // ICONS -----------------------------------------------------------------------
 
 gulp.task('icons', function () {
-  return gulp.src(['./src/img/icons/**/*.svg'])
+  return gulp.src(['./src/img/*.svg'])
     .pipe(plumber())
     .pipe(svgmin(function (file) {
       var prefix = path.basename(file.relative, path.extname(file.relative));
@@ -158,7 +158,7 @@ gulp.task('icons', function () {
         }]
       }
     }))
-    .pipe(gulp.dest('./dist/img'));
+    .pipe(gulp.dest('./dist/img/'));
 });
 
 // COPY ------------------------------------------------------------------------
