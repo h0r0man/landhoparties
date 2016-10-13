@@ -19,9 +19,7 @@ var sass         = require('gulp-sass'),
     cssnano      = require('gulp-cssnano'),
     shorthand    = require('gulp-shorthand');
 
-var cheerio      = require('gulp-cheerio'),
-    svgstore     = require('gulp-svgstore'),
-    svgmin       = require('gulp-svgmin');
+var svgmin       = require('gulp-svgmin');
 
 var browserSync  = require('browser-sync'),
     reload       = browserSync.reload;
