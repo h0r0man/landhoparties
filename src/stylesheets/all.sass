@@ -1,0 +1,171 @@
+@charset "UTF-8"
+
+// Tools
+
+.hide
+  position: absolute
+  left: -999em
+
+// Design
+
+html, body, .hero
+  height: -webkit-calc(100% - 0px)
+  height: calc(100% - 0px)
+
+.hero
+  overflow: hidden
+
+img
+  width: 100%
+  height: auto
+
+.hero
+  position: relative
+  background-color: #000
+  background-image: url(../img/bg-portrait.jpg)
+  background-size: cover
+  background-position: center top
+  background-repeat: no-repeat
+  height: 100vh
+  width: 100%
+
+  @media (min-width: 40em)
+    background-image: url(../img/bg-landscape.jpg)
+
+  a
+    transform: scale(1)
+    transition: transform 250ms ease-in
+
+    &:hover,
+    &:focus
+      transform: scale(1.05)
+
+
+  &-content
+    position: absolute
+    z-index: 1
+    top: 4%
+    text-align: center
+    left: 0
+    width: 100%
+
+    @media (min-width: 40em)
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+
+    a
+      display: inline-block
+      line-height: 0
+
+    h1
+      margin: 0.5rem 0 0.25rem
+      animation-delay: 250ms
+
+      img
+        width: 33vw
+        min-width: 10rem
+
+        @media (min-width: 22.5em)
+          min-width: 15rem
+
+    .first
+      animation-delay: 1000ms
+
+    .last
+      animation-delay: 1750ms
+
+    .landho
+      display: inline-block
+
+      @media (min-width: 40em)
+        display: none
+
+      img
+        max-width: (140px / 2)
+
+        @media (min-width: 22.5em)
+          max-width: (230px / 2)
+
+    .cohouse
+      display: inline-block
+      animation-delay: 1750ms
+
+      @media (min-width: 40em)
+        display: none
+
+      img
+        max-width: (140px / 2)
+
+  &-sponsors
+    position: absolute
+    left: 0
+    width: 100%
+    bottom: 0
+    -js-display: flex
+    display: flex
+    right: 0
+    max-width: 60rem
+    margin: auto
+
+    .hero-sponsor
+      box-sizing: border-box
+      padding: 1rem
+      text-align: center
+      -js-display: flex
+      display: flex
+      align-items: center
+      justify-content: center
+
+      @-moz-document url-prefix()
+        display: block
+
+      flex: 1
+
+      a
+        display: block
+        line-height: 0
+
+    .landho
+      animation-delay: 2250ms
+
+      @media (max-width: 40em)
+        display: none
+
+      img
+        max-width: (230px / 2)
+
+    .cohouse
+      animation-delay: 2750ms
+
+      @media (max-width: 40em)
+        display: none
+
+      img
+        max-width: (140px / 2)
+
+    .dlso
+      animation-delay: 3250ms
+
+      img
+        max-width: (126px / 2)
+
+    .wollof
+      animation-delay: 3750ms
+
+      img
+        max-width: (134px / 2)
+
+    .inri
+      animation-delay: 4250ms
+
+      img
+        max-width: (112px / 2)
+
+    .rdsnt
+      animation-delay: 4750ms
+
+      img
+        max-width: (182px / 2)
+
+@import "animate-css"

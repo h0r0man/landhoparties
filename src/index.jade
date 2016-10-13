@@ -1,0 +1,74 @@
+include _vars.jade
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+
+    title #{title}
+
+    meta(name="description", content="#{description}")
+    meta(name="robots", content="index, follow")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="theme-color" content="#{themeColor}")
+    
+    //- Facebook
+    meta(property="og:title" content="#{title}")
+    meta(property="og:description" content="#{description}")
+    meta(property="og:image" content="#{image}")
+
+    meta(name="google-site-verification", content="#{googleSiteVerification}")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
+    link(rel="stylesheet", href="css/all.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
+
+  body
+    div.hero
+
+      div.hero-content
+        div.first.fadeInDown.animated
+          a.landho(href="https://www.facebook.com/landhofamily/" rel="external")
+            span.hide Land Ho
+            img(src="http://assets.horoman.com/land-ho-parties/land-ho.svg", alt="")
+        h1.tada.animated
+          a(href="https://www.facebook.com/landhofamily/" rel="me")
+            span.hide #{title}
+            img(src="http://assets.horoman.com/land-ho-parties/land-ho-parties.svg", alt="")
+        div.last.fadeInDown.animated
+          a.cohouse(href="https://www.facebook.com/Cohouse-Pigneto-972151569480727/" target="_blank" rel="external")
+            span.hide COHOUSE Pigneto
+            img(src="http://assets.horoman.com/land-ho-parties/cohose-pigneto.svg", alt="")
+
+      div.hero-sponsors
+
+        div.hero-sponsor.landho.slideInUp.animated
+          a(href="https://www.facebook.com/landhofamily/" rel="me")
+            span.hide Land Ho
+            img(src="http://assets.horoman.com/land-ho-parties/land-ho.svg", alt="")
+
+        div.hero-sponsor.cohouse.slideInUp.animated
+          a(href="https://www.facebook.com/Cohouse-Pigneto-972151569480727/" target="_blank" rel="external")
+            span.hide COHOUSE Pigneto
+            img(src="http://assets.horoman.com/land-ho-parties/cohose-pigneto.svg", alt="")
+
+        div.hero-sponsor.dlso.slideInUp.animated
+          a(href="https://www.facebook.com/dlso.it/" target="_blank" rel="external")
+            span.hide DLSO
+            img(src="http://assets.horoman.com/land-ho-parties/dlso.svg", alt="")
+
+        div.hero-sponsor.wollof.slideInUp.animated
+          a(href="https://www.facebook.com/wearewollof/" target="_blank" rel="external")
+            span.hide Wollof
+            img(src="http://assets.horoman.com/land-ho-parties/wollof.svg", alt="")
+
+        div.hero-sponsor.inri.slideInUp.animated
+          a(href="https://www.facebook.com/inritorino/" target="_blank" rel="external")
+            span.hide INRI
+            img(src="http://assets.horoman.com/land-ho-parties/inri.svg", alt="")
+
+        div.hero-sponsor.rdsnt.slideInUp.animated
+          a(href="https://www.facebook.com/radiodsnt/" target="_blank" rel="external")
+            span.hide RDSNT
+            img(src="http://assets.horoman.com/land-ho-parties/r-dsnt.svg", alt="")
+
+    script(src='js/all.js')

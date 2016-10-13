@@ -1,0 +1,42 @@
+{
+  "name": "gulp-horoman",
+  "version": "0.0.1",
+  "description": "A workflow environment using Gulp.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h0r0man/gulp-horoman.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.7",
+    "concurrent-transform": "^1.0.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cheerio": "^0.6.2",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-favicons": "^2.2.6",
+    "gulp-image-resize": "^0.8.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-shorthand": "^1.1.0",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-svgstore": "^6.0.0",
+    "path": "^0.12.7",
+    "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "flexibility": "^2.0.1",
+    "jquery": "^3.1.1",
+    "modernizr": "^3.3.1",
+    "normalize-scss": "^5.0.3",
+    "normalize.css": "^5.0.0",
+    "script-loader": "^0.7.0",
+    "viewport-units-buggyfill": "^0.6.0"
+  }
+}

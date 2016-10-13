@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Roman Horokhovatskyy -- UI Developer -- @h0r0man
+
+# TECHNOLOGY COLOPHON
+
+  CSS3, HTML5
+  Gulp.js, BrowserSync, npm
