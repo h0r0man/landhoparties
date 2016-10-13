@@ -16,6 +16,8 @@ html(lang="en")
     meta(property="og:title" content="#{title}")
     meta(property="og:description" content="#{description}")
     meta(property="og:image" content="#{image}")
+    meta(property="og:image:width" content="1280")
+    meta(property="og:image:height" content="720")
 
     meta(name="google-site-verification", content="#{googleSiteVerification}")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
@@ -34,7 +36,7 @@ html(lang="en")
           a(href="https://www.facebook.com/landhofamily/" rel="me")
             span.hide #{title}
             img(src="img/land-ho-parties.svg", alt="")
-        p.Hide #{description}
+        p.hide #{description}
         div.last.fadeInDown.animated
           a.cohouse(href="https://www.facebook.com/Cohouse-Pigneto-972151569480727/" target="_blank" rel="external")
             span.hide COHOUSE Pigneto
