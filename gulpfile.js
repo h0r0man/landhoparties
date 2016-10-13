@@ -23,8 +23,6 @@ var cheerio      = require('gulp-cheerio'),
     svgstore     = require('gulp-svgstore'),
     svgmin       = require('gulp-svgmin');
 
-var favicons     = require('gulp-favicons');
-
 var browserSync  = require('browser-sync'),
     reload       = browserSync.reload;
 
@@ -198,28 +196,4 @@ gulp.task('watch', function () {
 
 gulp.task('default', function () {
   gulp.start('clean', 'build', 'watch');
-});
-
-// FAVICONS --------------------------------------------------------------------
-
-gulp.task('favicons', function () {
-  return gulp.src('./src/img/logo.png')
-    .pipe(favicons({
-      appName: "gulp-horoman",
-      appDescription: "A workflow environment using Gulp.js",
-      developerName: "Roman Horokhovatskyy",
-      developerURL: "http://horoman.com/",
-      background: "#FFF",
-      path: "/",
-      url: "http://domain.ltd/",
-      display: "standalone",
-      orientation: "portrait",
-      version: 0.2,
-      logging: false,
-      online: false,
-      html: "index.html",
-      pipeHTML: true,
-      replace: true
-    }))
-    .pipe(gulp.dest('./dist/'))
 });
