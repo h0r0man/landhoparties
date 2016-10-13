@@ -23,9 +23,9 @@ html(lang="en")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
 
   body
-    div.hero
+    main.hero(role="main")
 
-      div.hero-content
+      div.hero-content(role="banner")
         div.first.fadeInDown.animated
           a.landho(href="https://www.facebook.com/landhofamily/" rel="external")
             span.hide Land Ho
@@ -34,12 +34,13 @@ html(lang="en")
           a(href="https://www.facebook.com/landhofamily/" rel="me")
             span.hide #{title}
             img(src="img/land-ho-parties.svg", alt="")
+        p.Hide #{description}
         div.last.fadeInDown.animated
           a.cohouse(href="https://www.facebook.com/Cohouse-Pigneto-972151569480727/" target="_blank" rel="external")
             span.hide COHOUSE Pigneto
             img(src="img/cohose-pigneto.svg", alt="")
 
-      div.hero-sponsors
+      div.hero-sponsors(role="complementary")
 
         div.hero-sponsor.landho.slideInUp.animated
           a(href="https://www.facebook.com/landhofamily/" rel="me")
